@@ -81,10 +81,7 @@ Por lo tanto con 8 hilos:
 
 5. 200 hilos.
 
-![image](https://user-images.githubusercontent.com/98216991/216288199-4cb49b6d-16a2-45ed-b12d-79eae22b6303.png)
-
-
-
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/98216991/216288457-8e9a78e7-2dc8-4604-8958-e70723377553.png">
 
 7. 500 hilos.
 
@@ -100,20 +97,12 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 
 2. Cómo se comporta la solución usando tantos hilos de procesamiento como núcleos comparado con el resultado de usar el doble de éste?.
 
-3. De acuerdo con lo anterior, si para este problema en lugar de 500 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 500 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 500/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
+Como se observa en las imagenes  el tiempo  se ve afectado cuando la cantidad de hilos  es muy alta, incluso este empeora cuando se usan 16 hilos en vez de 8 hilos.
+
+3. De acuerdo con lo anterior, si para este problema en lugar de 500 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 500 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 500/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta. 
+
+Claramente mejoraria ya que a medida que se pueda involucrar más procesadores (En este caso se puede decir que cada maquina hipotetica posee su procesador), el trabajo paralelizable va a disminuir ya que no existiran sub-procesos compitiendo y esperando por el recurso a utilizar el cual seria el procesador.
 
 
 
-#### Criterios de evaluación.
 
-1. Funcionalidad:
-	- El problema fue paralelizado (el tiempo de ejecución se reduce y el uso de los núcleos aumenta), y permite parametrizar el número de hilos usados simultáneamente.
-
-2. Diseño:
-	- La signatura del método original sólo fue modificada con el parámetro original, y en el mismo debe quedar encapsulado la paralelización e inicio de la solución, y la sincronización de la finalización de la misma.
-	- Las nuevas pruebas con sólo UN hilo deben ser exactamente iguales a las originales, variando sólo el parámetro adicional. Se incluyeron pruebas con hilos adicionales, y las mismas pasan.
-	- Se plantea un método eficiente para combinar los resultados en el orden correcto (iterar sobre cada resultado NO sera eficiente).
-
-3. Análisis.
-	- Se deja evidencia de la realización de los experimentos.
-	- Los análisis realizados son consistentes.
