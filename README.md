@@ -3,10 +3,8 @@
 ### Arquitecturas de Software
 ### Introducción al paralelismo - hilos
 
-### Trabajo individual o en parejas
+Brayan Castiblanco - Francisco Márquez
 
-Entrega: Martes en el transcurso del día.
-Entregar: Fuentes y documento PDF con las respuestas.
 
 **Parte I Hilos Java**
 
@@ -30,6 +28,8 @@ Entregar: Fuentes y documento PDF con las respuestas.
 	6. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
 	
 	La salida cambia completamente, pues al iniciarse un Thread con start() sí se genera un hilo como tal, mientras que al hacerlo con run() únicamente se llama a 		ese método, no se inicia un hilo como tal.
+	
+	
 	<img width="300" alt="image" src="https://user-images.githubusercontent.com/98216991/216257657-a878dd49-52f3-4960-93e0-e34a582688c6.png">
 
 
@@ -42,6 +42,15 @@ Para este ejercicio se quiere calcular, en el menor tiempo posible, y en una sol
 1. Cree una clase de tipo Thread que represente el ciclo de vida de un hilo que calcule una parte de los dígitos requeridos.
 2. Haga que la función PiDigits.getDigits() reciba como parámetro adicional un valor N, correspondiente al número de hilos entre los que se va a paralelizar la solución. Haga que dicha función espere hasta que los N hilos terminen de resolver el problema para combinar las respuestas y entonces retornar el resultado. Para esto, revise el método [join](https://docs.oracle.com/javase/tutorial/essential/concurrency/join.html) del API de concurrencia de Java.
 3. Ajuste las pruebas de JUnit, considerando los casos de usar 1, 2 o 3 hilos (este último para considerar un número impar de hilos!)
+
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/98216991/216259706-b387a0d9-9cf8-4961-ab0e-d109631216fc.png">
+
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/98216991/216259521-4473e524-c376-4297-9e2a-c63d787a20e5.png">
+
+
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/98216991/216259833-2e73fafd-b3ee-4545-b67e-0e2da620f9af.png">
+
 
 
 **Parte III Evaluación de Desempeño**
