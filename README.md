@@ -58,10 +58,32 @@ Para este ejercicio se quiere calcular, en el menor tiempo posible, y en una sol
 A partir de lo anterior, implemente la siguiente secuencia de experimentos para calcular el millon de dígitos (hex) de PI, tomando los tiempos de ejecución de los mismos (asegúrese de hacerlos en la misma máquina):
 
 1. Un solo hilo.
-2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/98216991/216274237-dbefcbab-7947-4b89-a6b0-c333d83a8391.png">
+
+
+2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime]
+
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/98216991/216275596-9216d3fc-acd4-4cf4-9e5e-af0fa8281bd2.png">
+
+<img width="295" alt="image" src="https://user-images.githubusercontent.com/98216991/216275936-afbc50d0-9a55-4a62-9049-e79f0ededeb0.png">
+
+Por lo tanto con 8 hilos:
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/98216991/216276375-6ccbfcf5-2225-475d-8f76-1428732a01ce.png">
+
+
+
 3. Tantos hilos como el doble de núcleos de procesamiento.
-4. 200 hilos.
-5. 500 hilos.
+
+16 hilos:
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/98216991/216276709-aa05bb2d-c2d8-4356-9243-b016afd4f12e.png">
+
+5. 200 hilos.
+
+
+
+7. 500 hilos.
 
 Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso. ![](img/jvisualvm.png)
 
