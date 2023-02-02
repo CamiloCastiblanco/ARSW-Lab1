@@ -17,9 +17,21 @@ Entregar: Fuentes y documento PDF con las respuestas.
 
 2. Complete el método __main__ de la clase CountMainThreads para que:
 	1. Cree 3 hilos de tipo CountThread, asignándole al primero el intervalo [0..99], al segundo [99..199], y al tercero [200..299].
-	2. Inicie los tres hilos con 'start()'.
-	3. Ejecute y revise la salida por pantalla. 
-	4. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
+	
+	- Se crean los 3 hilos.
+	
+	<img width="431" alt="image" src="https://user-images.githubusercontent.com/98216991/216256484-3ad36eb8-d077-4309-96b5-9021b60263db.png">
+	
+	3. Inicie los tres hilos con 'start()'.
+	4. Ejecute y revise la salida por pantalla. 
+	
+	<img width="300" alt="image" src="https://user-images.githubusercontent.com/98216991/216257309-eccdb206-c09b-4466-9523-9ba55f9fd912.png">
+
+	6. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
+	
+	La salida cambia completamente, pues al iniciarse un Thread con start() sí se genera un hilo como tal, mientras que al hacerlo con run() únicamente se llama a 		ese método, no se inicia un hilo como tal.
+	<img width="300" alt="image" src="https://user-images.githubusercontent.com/98216991/216257657-a878dd49-52f3-4960-93e0-e34a582688c6.png">
+
 
 **Parte II Hilos Java**
 
