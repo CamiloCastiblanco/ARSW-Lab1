@@ -1,3 +1,4 @@
+## RECO me la pela
 ## Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software
 ### Introducción al paralelismo - hilos
