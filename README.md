@@ -81,6 +81,9 @@ Por lo tanto con 8 hilos:
 
 5. 200 hilos.
 
+![image](https://user-images.githubusercontent.com/98216991/216288199-4cb49b6d-16a2-45ed-b12d-79eae22b6303.png)
+
+
 
 
 7. 500 hilos.
