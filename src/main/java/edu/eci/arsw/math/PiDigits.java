@@ -1,5 +1,9 @@
 package edu.eci.arsw.math;
 
+import java.io.ByteArrayInputStream;
+import java.util.Arrays;
+
+
 ///  <summary>
 ///  An implementation of the Bailey-Borwein-Plouffe formula for calculating hexadecimal
 ///  digits of pi.
@@ -108,6 +112,16 @@ public class PiDigits {
         }
 
         return result;
+    }
+    public static void getDigits(int start, int count, int n){
+        int actual = start;
+        
+        for (int i = 0; i < n; i++){
+            PidDigitsThread pi = new PidDigitsThread(actual, actual + count/n);
+            pi.start();             
+            actual = actual + count/n;            
+        }   
+        
     }
 
 }
