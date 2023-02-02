@@ -1,4 +1,4 @@
-## Escuela Colombiana de Ingenierí
+## Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software
 ### Introducción al paralelismo - hilos
 
